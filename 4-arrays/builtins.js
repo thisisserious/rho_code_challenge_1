@@ -11,5 +11,10 @@ arr.sort(); //[0, 3, 32]//
 Assign the result to a new array called newArr. Console.log the new array.
 */
 
-var newArr = arr.map(Math.sqrt);
+// #4 updated 9.27.16
+
+var newArr = arr.map(function (num) {
+  return num / 2;
+});
+
 console.log(newArr);

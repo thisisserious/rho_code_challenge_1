@@ -19,5 +19,11 @@ prime.address = '9401 JAMES AVE S, SUITE 152';
 3 - Using dot notation, create a new method for prime. This method will
     console log out the complete address of prime. Call the new property/method print.
 */
-prime.print = prime.address + ' ' + prime.city + ' ' + prime.state + ' ' + prime.zip;
-console.log(prime.print);
+
+// #3 update 9.27.16
+
+prime.print = function () {
+  console.log(prime.address + ' ' + prime.city + ', ' + prime.state + ' ' + prime.zip);
+};
+
+prime.print();
